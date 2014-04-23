@@ -13,6 +13,10 @@ set ignorecase smartcase
 set wildmenu wildmode=longest:full
 " allow pasting from outside vim, disabling auto-indent and others
 set pastetoggle=<F2>
+" delete trailing whitespace on save!
+autocmd BufWritePre * :%s/\s\+$//e
+" make % switch between if, else, and all sortsa things
+runtime macros/matchit.vim
 " disables the bell noise and removes any associated delay
 set noerrorbells visualbell t_vb=
 " allow switching files and buffers without saving
@@ -28,7 +32,7 @@ set formatoptions+=r
 " don't insert leading comment characters when pressing `o` or `O` in normal mode
 set formatoptions-=o
 " keep 50 commands in history
-set history=50
+set history=1000
 " swap file directories
 set backupdir=~/.vim/backup,.,~
 set directory=~/.vim/backup,.,~
@@ -254,3 +258,4 @@ nmap <silent> <leader>l :set list!<return>
 " \<space> and \<tab> to toggle between leading spaces and tabs respectively
 nmap <silent> <leader><space> :set expandtab tabstop=2 softtabstop=2 shiftwidth=2<return>
 nmap <silent> <leader><tab> :set noexpandtab tabstop=2 softtabstop=2 shiftwidth=2<return>
+
