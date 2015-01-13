@@ -47,9 +47,9 @@ set showcmd
 " always show cursor
 set ruler
 " highlight the cursor's line
-set cursorline
+" set cursorline
 " highlight the cursor's column
-set cursorcolumn
+" set cursorcolumn
 " flash matching bracket on insert
 set showmatch
 " search as you type
