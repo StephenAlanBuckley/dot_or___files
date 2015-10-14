@@ -1,0 +1,9 @@
+[user]
+	name = StephenAlanBuckley
+	email = stephen.alan.buckley@gmail.com
+[credential]
+	helper = osxkeychain
+[alias]
+  st = status
+  ci = commit
+  rpull = pull -r
