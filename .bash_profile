@@ -13,6 +13,7 @@ alias make_directory="mkdir"
 alias list="ls -1FGTk"
 alias list_all="ls -1FGTkal"
 
-bash ~/dot_or___files/environment_hacks/tmux_saver.sh restore
-
-trap "~/dot_or___files/environment_hacks/tmux_saver.sh save" EXIT
+# Some day when you care more try getting this down
+#
+#bash ~/dot_or___files/environment_hacks/tmux_saver.sh restore
+#trap "~/dot_or___files/environment_hacks/tmux_saver.sh save" EXIT
