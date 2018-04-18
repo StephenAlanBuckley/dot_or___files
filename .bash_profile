@@ -16,6 +16,7 @@ export PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
 #   -----------------------------
 alias list="ls -1FGTk"
 alias ll="ls -1FGTk"
+alias cll="clear & ls -1FGTk"
 alias edit='subl'                           # edit:         Opens any file in sublime editor
 alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
 alias ~="cd ~"                              # ~:            Go Home
