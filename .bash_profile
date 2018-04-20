@@ -14,10 +14,9 @@ export PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
 #   -----------------------------
 #   2.  MAKE TERMINAL BETTER
 #   -----------------------------
-alias make_directory="mkdir"
 alias list="ls -1FGTk"
 alias ll="ls -1FGTk"
-alias list_all="ls -1FGTkal"
+alias cll="clear & ls -1FGTk"
 alias edit='subl'                           # edit:         Opens any file in sublime editor
 alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
 alias ~="cd ~"                              # ~:            Go Home
@@ -26,6 +25,8 @@ trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the 
 ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
 
 #    show git information in the prompt
+#    In order for this to work you need bash-git-prompt installed
+#    brew install bash-git-prompt
 if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
   __GIT_PROMPT_DIR=$(brew --prefix)/opt/bash-git-prompt/share
   source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
